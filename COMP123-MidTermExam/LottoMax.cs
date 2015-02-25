@@ -15,7 +15,7 @@ namespace COMP123_MidTermExam
         public LottoMax()
             : base(7, 49)
         {
-            
+            this._generateLottoNumbers();
 
         }
 
@@ -40,13 +40,13 @@ namespace COMP123_MidTermExam
 
                 string elementString = "";
 
-                pickElements = this._lottoElementArray[];
+                this._lottoElementArray = pickElements();
                 // Assign pickElement to _LottoElementArray
 
-                for(int element = 0; element < 6; element++)
+                for(int element = 0; element < 7; element++)
                 {
                     // Loop through _lottoElementArray
-                    elementString += this._lottoElementArray + "";
+                    elementString += this._lottoElementArray[element] + " ";
                     // elementString += an element from element array +" ";
 
                 }
